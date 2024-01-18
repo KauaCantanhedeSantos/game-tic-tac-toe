@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Tektur" ;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(222deg, #8052ec, #d161ff);
+}
+html{
+  font-size: 1.5rem;
+}
+button{
+  cursor: pointer;
+}
+.tictactoe{
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  left: 50%;
+  top: 50%;
+}
+.container{
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-option{
+  background: #fff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  color: #8052ec;
+  box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.5);
+}
+
+#reset{
+  margin-top: 1.5rem;
+  margin: 1rem auto;
+  display: block;
+  border: none;
+  padding: 0.5rem;
+  width: 30vmin;
+  font-size: 1.2rem;
+  background: #0a0000;
+  color: white;
+  border-radius: 0.5rem;
+}
+.popup{
+  background: linear-gradient(-222deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 3rem;
+}
+.message{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+@media(max-widht: 888px){
+  .message{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+}
+#new-game{
+  border: none;
+  padding: 0.5rem;
+  width: 30vmin;
+  font-size: 1.2rem;
+  background: #0a0000;
+  color: white;
+  border-radius: 0.5rem;
+}
+.active{
+  display: none;
+}
